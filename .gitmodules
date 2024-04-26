@@ -1,0 +1,6 @@
+[submodule "Harvester"]
+	path = Harvester
+	url = https://github.com/CFO-Clement/Harvester
+[submodule "Nester"]
+	path = Nester
+	url = https://github.com/CFO-Clement/Nester

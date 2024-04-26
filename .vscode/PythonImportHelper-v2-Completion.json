@@ -1,0 +1,399 @@
+[
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "struct",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "struct",
+        "description": "struct",
+        "detail": "struct",
+        "documentation": {}
+    },
+    {
+        "label": "Log",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "Log",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "Log",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "TCPServer",
+        "importPath": "tcp_serveur",
+        "description": "tcp_serveur",
+        "isExtraImport": true,
+        "detail": "tcp_serveur",
+        "documentation": {}
+    },
+    {
+        "label": "Log",
+        "kind": 6,
+        "importPath": "Nester.nester_ansible.files.app.src.logger.logger",
+        "description": "Nester.nester_ansible.files.app.src.logger.logger",
+        "peekOfCode": "class Log:\n    def __init__(self, name=\"my_logger\", log_file=None):\n        self.logger = logging.getLogger(name)\n        self.logger.setLevel(logging.DEBUG)\n        formatter = logging.Formatter(\n            fmt=\"%(asctime)s [%(levelname)s] (%(threadName)s) - %(message)s\",\n            datefmt=\"%Y-%m-%d %H:%M:%S\"\n        )\n        console_handler = logging.StreamHandler()\n        console_handler.setFormatter(formatter)",
+        "detail": "Nester.nester_ansible.files.app.src.logger.logger",
+        "documentation": {}
+    },
+    {
+        "label": "TCPBase",
+        "kind": 6,
+        "importPath": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_base",
+        "description": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_base",
+        "peekOfCode": "class TCPBase:\n    \"\"\"\n    Base class for TCPClient and TCPServer\n    \"\"\"\n    def __init__(self, stop_event):\n        \"\"\"\n        Initialize the TCPBase\n        :param stop_event: The stop event\n        \"\"\"\n        log.debug(f\"Initializing TCPBase\")",
+        "detail": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_base",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_base",
+        "description": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_base",
+        "peekOfCode": "log = Log(\"tcp_base\")\nclass TCPBase:\n    \"\"\"\n    Base class for TCPClient and TCPServer\n    \"\"\"\n    def __init__(self, stop_event):\n        \"\"\"\n        Initialize the TCPBase\n        :param stop_event: The stop event\n        \"\"\"",
+        "detail": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_base",
+        "documentation": {}
+    },
+    {
+        "label": "TCPServer",
+        "kind": 6,
+        "importPath": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_serveur",
+        "description": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_serveur",
+        "peekOfCode": "class TCPServer(TCPBase):\n    def __init__(self, host, port, stop_event):\n        super().__init__(stop_event)\n        self.host = host\n        self.port = port\n        self.server_socket = None\n        self.client_list = {}\n    def start(self):\n        try:\n            self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)",
+        "detail": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_serveur",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_serveur",
+        "description": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_serveur",
+        "peekOfCode": "log = Log(\"tcp_server\")\nclass TCPServer(TCPBase):\n    def __init__(self, host, port, stop_event):\n        super().__init__(stop_event)\n        self.host = host\n        self.port = port\n        self.server_socket = None\n        self.client_list = {}\n    def start(self):\n        try:",
+        "detail": "Nester.nester_ansible.files.app.src.tcp_serveur.tcp_serveur",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "def index():\n    client_data = [{\n        'id': client_id,\n        'ip': server.client_list[client_id]['socket'].getpeername()[0],\n        'port': server.client_list[client_id]['socket'].getpeername()[1],\n        'status': 'Active',\n        'last_active': datetime.fromtimestamp(server.client_list[client_id]['last_heartbeat']).strftime('%Y-%m-%d %H:%M:%S')\n                if 'last_heartbeat' in server.client_list[client_id] else 'Never'\n    } for client_id in server.client_list]\n    return render_template('index.html', clients=client_data)",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "send_heartbeat",
+        "kind": 2,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "def send_heartbeat(client_id):\n    if client_id in server.client_list:\n        server.send_message(client_id, 'HEARTBEAT')\n        data = server.recieve_message(client_id)\n        if data == 'HEARTBEAT':\n            flash('Node is responsive', 'success')\n        else:\n            flash('Node response mismatch', 'warning')\n    else:\n        flash('Node not found', 'danger')",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "node_detail",
+        "kind": 2,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "def node_detail(client_id):\n    if client_id in server.client_list:\n        server.send_message(client_id, 'INFO')\n        data = server.recieve_message(client_id)\n        return render_template('node_detail.html', data=json.loads(data))\n    else:\n        return 'Node not found', 404\n@app.route('/node_nmap/<client_id>')\ndef node_nmap(client_id):\n    if client_id in server.client_list:",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "node_nmap",
+        "kind": 2,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "def node_nmap(client_id):\n    if client_id in server.client_list:\n        return render_template('node_nmap.html', client_id=client_id)\n    else:\n        return 'Node not found', 404\n@app.route('/run_nmap/<client_id>', methods=['POST'])\ndef run_nmap(client_id):\n    if client_id not in server.client_list:\n        return 'Node not found', 404\n    target = request.form['target']",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "run_nmap",
+        "kind": 2,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "def run_nmap(client_id):\n    if client_id not in server.client_list:\n        return 'Node not found', 404\n    target = request.form['target']\n    predefined = request.form['predefined_command'].replace('+', ' ')\n    custom = request.form['custom_command']\n    command = f\"NMAP {predefined} {target}\" if predefined else f\"NMAP {custom}\"\n    server.send_message(client_id, command)\n    data = server.recieve_message(client_id)\n    if data:",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "log = Log(\"main\")\nlog.info(\"Loading environment\")\nscript_dir = os.path.dirname(__file__)\nlog.debug(f\"script_dir: {script_dir}\")\nenv_path = os.path.join(script_dir, '../config.env')\nlog.debug(f\"env_path: {env_path}\")\nload_dotenv(env_path)\nNESTER_LISTEN_IP = os.getenv('NESTER_LISTEN_IP')\nNESTER_LISTEN_PORT = int(os.getenv('NESTER_LISTEN_PORT'))\nSECRET_KEY = os.getenv('SECRET_KEY')",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "script_dir",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "script_dir = os.path.dirname(__file__)\nlog.debug(f\"script_dir: {script_dir}\")\nenv_path = os.path.join(script_dir, '../config.env')\nlog.debug(f\"env_path: {env_path}\")\nload_dotenv(env_path)\nNESTER_LISTEN_IP = os.getenv('NESTER_LISTEN_IP')\nNESTER_LISTEN_PORT = int(os.getenv('NESTER_LISTEN_PORT'))\nSECRET_KEY = os.getenv('SECRET_KEY')\nFLASK_EXPOSE_IP = os.getenv('FLASK_LISTEN_IP')\nFLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "env_path",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "env_path = os.path.join(script_dir, '../config.env')\nlog.debug(f\"env_path: {env_path}\")\nload_dotenv(env_path)\nNESTER_LISTEN_IP = os.getenv('NESTER_LISTEN_IP')\nNESTER_LISTEN_PORT = int(os.getenv('NESTER_LISTEN_PORT'))\nSECRET_KEY = os.getenv('SECRET_KEY')\nFLASK_EXPOSE_IP = os.getenv('FLASK_LISTEN_IP')\nFLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))\napp = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "NESTER_LISTEN_IP",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "NESTER_LISTEN_IP = os.getenv('NESTER_LISTEN_IP')\nNESTER_LISTEN_PORT = int(os.getenv('NESTER_LISTEN_PORT'))\nSECRET_KEY = os.getenv('SECRET_KEY')\nFLASK_EXPOSE_IP = os.getenv('FLASK_LISTEN_IP')\nFLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))\napp = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "NESTER_LISTEN_PORT",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "NESTER_LISTEN_PORT = int(os.getenv('NESTER_LISTEN_PORT'))\nSECRET_KEY = os.getenv('SECRET_KEY')\nFLASK_EXPOSE_IP = os.getenv('FLASK_LISTEN_IP')\nFLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))\napp = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "SECRET_KEY = os.getenv('SECRET_KEY')\nFLASK_EXPOSE_IP = os.getenv('FLASK_LISTEN_IP')\nFLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))\napp = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "FLASK_EXPOSE_IP",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "FLASK_EXPOSE_IP = os.getenv('FLASK_LISTEN_IP')\nFLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))\napp = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{\n        'id': client_id,",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "FLASK_EXPOSE_PORT",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "FLASK_EXPOSE_PORT = int(os.getenv('FLASK_LISTEN_PORT'))\napp = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{\n        'id': client_id,\n        'ip': server.client_list[client_id]['socket'].getpeername()[0],",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "app = Flask(__name__, template_folder='templates')\napp.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{\n        'id': client_id,\n        'ip': server.client_list[client_id]['socket'].getpeername()[0],\n        'port': server.client_list[client_id]['socket'].getpeername()[1],",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "app.secret_key = SECRET_KEY\nstop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{\n        'id': client_id,\n        'ip': server.client_list[client_id]['socket'].getpeername()[0],\n        'port': server.client_list[client_id]['socket'].getpeername()[1],\n        'status': 'Active',",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "stop_event",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "stop_event = threading.Event()\nserver = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{\n        'id': client_id,\n        'ip': server.client_list[client_id]['socket'].getpeername()[0],\n        'port': server.client_list[client_id]['socket'].getpeername()[1],\n        'status': 'Active',\n        'last_active': datetime.fromtimestamp(server.client_list[client_id]['last_heartbeat']).strftime('%Y-%m-%d %H:%M:%S')",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "Nester.nester_ansible.files.app.src.app",
+        "description": "Nester.nester_ansible.files.app.src.app",
+        "peekOfCode": "server = TCPServer(NESTER_LISTEN_IP, NESTER_LISTEN_PORT, stop_event)\n@app.route('/')\ndef index():\n    client_data = [{\n        'id': client_id,\n        'ip': server.client_list[client_id]['socket'].getpeername()[0],\n        'port': server.client_list[client_id]['socket'].getpeername()[1],\n        'status': 'Active',\n        'last_active': datetime.fromtimestamp(server.client_list[client_id]['last_heartbeat']).strftime('%Y-%m-%d %H:%M:%S')\n                if 'last_heartbeat' in server.client_list[client_id] else 'Never'",
+        "detail": "Nester.nester_ansible.files.app.src.app",
+        "documentation": {}
+    }
+]
