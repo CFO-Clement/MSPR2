@@ -46,13 +46,10 @@ Pour une gestion efficace et performante des données de métriques collectées 
 - Configuration pour accepter les connexions Prometheus.
 - Installation de l'adaptateur Prometheus pour TimescaleDB.
 
-### Ports utilisés
-- **TimescaleDB** : Port 5432 pour la base de données.
-- **Prometheus PostgreSQL Adapter** : Port 9201 pour l'adaptateur et le port 80 pour la communication API
-
 ## Résumé des Ports Utilisés
 - **Harvester** : Ports 9090 (Prometheus), 9100 (Node Exporter), 6082 (NoVNC), 6175 (ShellInABox), 5902 (VNC).
 - **Nester** : Ports 3000 (Grafana), 6080 (NoVNC), 8080 (interface web), 5000 (reverse TCP pour Flask).
+- **SGDB** : Ports 5432 (TimeScalesPG), 9201 (Adaptateur)
 
 ## Comment Contribuer
 
